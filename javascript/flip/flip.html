@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+    body {
+      height:800px;
+    }
+
+    #spot {
+      overflow:hidden;
+      border:dotted 2px green;
+    }
+
+    #wrap {
+    height:100%;
+    overflow:hidden;
+    border:dotted 1px red;
+    }
+
+    .front h4 {
+      border:2px solid #000000;
+      cursor:pointer;
+    }
+
+    .btn {
+      cursor:pointer;
+    }
+
+    .flip {
+      height: 199px;
+      width: 300px;
+      margin: 0 auto;
+      text-align:center;
+    }
+
+    .flip img {
+      width: 300px;
+      height: auto;
+      cursor:pointer;
+    }
+
+    #result_img {
+      max-width:100%;
+      max-height:100%;
+    }
+
+    .flip .back {
+      background: #2184cd;
+      color: #fff;
+      border:1px dotted lime;
+      overflow:hidden;
+    }
+
+    .back p {
+      border:1px dotted orange;
+    }
+
+    #Fb {
+      float:left;
+      width:130px;
+      height:25px;
+      border:1px dotted lime;
+      
+      margin-left:10px;
+      margin-top:40px;
+    }
+
+    #self {
+      float:right;
+      width:90px;
+      height:25px;
+      border:1px dotted lime;
+      
+      margin-right:10px;
+      margin-top:40px;
+    }
+  </style>
+
+</head>
+<body>
+
+<div id="wrap">
+
+  <div class="flip pic">
+    <div class="front">
+        <img src="img/093.png" alt="" />
+    </div>
+    <div class="back">
+        <img id="result_img" alt="" />
+    </div>
+  </div>
+
+  <div class="flip text">
+    <div class="front">
+      <h4 class="do">整理できたら、クリックしてね</h4>
+    </div>
+    <div class="back">
+        <h3></h3>
+        <p></p>
+        <div id="Fb">
+          <button id="tweet" class="btn" type="button">リツイート</button>
+          <button id="share" class="btn" type="button">シェア</button>
+        </div>
+        <div id="self">
+          <button id="again" class="btn" type="button">もう一度引く</button>
+        </div>
+    </div>
+  </div>
+
+
+
+<!-- <script src="bg-lights.js"></script> -->
+<script src="jquery-2.2.4.js"></script>
+<script src="jquery.flip.min.js"></script>
+<script src="script.js"></script>
+
+  </div>
+
+</body>
+</html>
